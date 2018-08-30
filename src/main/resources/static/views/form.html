@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+</head>
+<body>
+
+
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <h3>Evidence Form : </h3>
+        
+        
+        <form role="form" method="post" name="evidenceForm" id="reused_form" enctype="multipart/form-data">
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <label for="name">
+                        Case No:</label>
+                    <input type="text" class="form-control" id="caseno" name="caseno"  maxlength="50" ng-model="group.caseno">
+                </div>
+                <div class="col-sm-6 form-group">
+                    <label for="name">
+                        Evidence Name:</label>
+                    <input type="text" class="form-control" id="evidancename" name="evidancename"  maxlength="50" ng-model="group.evidancename">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <label for="name">
+                        Investigation Officer:</label>
+                    <input type="text" class="form-control" id="officer" name="officer"
+                    maxlength="50" ng-model="group.officer">
+                </div>
+                <div class="col-sm-6 form-group">
+                    <label for="text">
+                        Phone:</label>
+                    <input type="text" class="form-control" id="phone" name="phone" ng-model="group.phone" required
+                    maxlength="10">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                    <label for="name">
+                        Message:</label>
+                    <textarea class="form-control" type="textarea" id="message" name="message" placeholder="Your Message Here" maxlength="3000" rows="3" ng-model="group.message"></textarea>
+                </div>
+            </div>
+            
+             
+             <div class="row">
+                <div class="col-sm-12 form-group">
+                   <div ng-controller="formController">
+                      <input type="file" class="form-control" onchange="setFile(this)">
+                    </div>
+                 </div>
+             </div>
+             
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                    <button type="submit" class="btn btn-lg btn-success btn-block" id="btnContactUs" ng-click="saveForm(group)">Submit It! </button>
+                </div>
+            </div>
+
+        </form>
+        
+    </div>
+</div>
+
+
+
+
+</body>
+</html>

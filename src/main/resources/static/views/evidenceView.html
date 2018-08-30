@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<div class="container">
+          
+  <table class="table table-striped">
+  
+  <tbody ng-repeat="x in group">
+      <tr>
+        <td>Case No</td>
+        <td>{{x.caseno}}</td>
+      </tr>
+      <tr>
+        <td>Evidence Name</td>
+        <td>{{x.evidancename}}</td>
+      </tr>
+      <tr>
+        <td>Officer</td>
+        <td>{{x.officer}}</td>
+      </tr>    
+      <tr>
+        <td>Phone</td>
+        <td>{{x.phone}}</td>
+      </tr>
+      <tr>
+        <td>Message</td>
+        <td>{{x.message}}</td>
+      </tr>
+     
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
